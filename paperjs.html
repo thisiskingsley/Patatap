@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="paper-full.js"></script>
+    <link rel="stylesheet" href="assets/css/paperjs.css">
+    <script type="text/paperscript" canvas="myCanvas">
+
+        for(x=0; x < 1000; x+=100){
+            for(y=0; y < 1000; y+=100){
+                new Path.Circle(new Point(x, y), 10).fillColor = 'red';
+            }    
+        }
+
+
+    </script>
+    
+    <title>Paper.js Expercise</title>
+</head>
+<body>
+    
+    <canvas id="myCanvas" resize></canvas>
+
+</body>
+</html>
